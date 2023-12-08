@@ -1,0 +1,76 @@
+img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight:bold ;
+}
+
+h1  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+p{
+    font-size: 15px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    width: 45%;
+    height: 50px;
+
+}
+
+.button_text {
+    font-size: 12px;
+}
+
+.rectangle {
+    background-color: #f6f6f6;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form {
+    border-radius: 30px;
+    margin-top: 20px;
+    flex-direction: column;
+}
+
+.restaurant {
+    background-color: #f6f6f6;
+}
+
+.cards {
+    background-color: white;
+    border-radius: 20px;
+    width: 100%;
+    box-shadow:3px 3px 10px #d9d9d9;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    }
+
+.cards__ img {
+    object-fit: cover;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 110px;
+}
+
