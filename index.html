@@ -4,75 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oh my food</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sass/styles.css">
 </head>
 <body>
     <div class="main-container">
         <div>
-            <header class="header">
-                <img src="images/logo/ohmyfood.png" alt="Logo ohmyfood">
-                <div>
-                  <nav>
+            <header class="header header__shadow">
+                <img  src="images/logo/ohmyfood.png" alt="Logo ohmyfood">
+                </header> 
+                <nav class="navbar">
                     <div>
                         <i class="fa-solid fa-location-dot fa-sm"></i>
                         <p>Paris, Belleville</p>
                    </div>
                     </nav>
-                </header> 
                 <main>
+                    <div>     
                         <h1>Réservez le menu qui vous convient</h1>
-                        <p>Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
-                        <button type="button" class="btn">
-                            <span class="button_text">Explorer nos restaurants </span>
-                        </button>
-                        <div class="fonctionnement">
-                            <h2>Fonctionnement</h2>
-                            <div class="rectangle form">
-                                <h3>Choisissez un restaurant</h3>
+                            <p>Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
+                                    <button type="button" class="btn">
+                                        <span class="button_text">Explorer nos restaurants </span>
+                                    </button>
+                                    <div class="fonctionnement">
+                                        <h2>Fonctionnement</h2>
+                                        <div class="fonctionnement__card form">
+                                            <h3>Choisissez un restaurant</h3>
+                                            <i class="fa-solid fa-mobile-screen-button"></i>
+                                        </div>
+                                        <div class="fonctionnement__card form">
+                                            <h3>Composez votre menu</h3>
+                                            <i class="fa-solid fa-list-ul"></i>
+                                        </div>
+                                        <div class="fonctionnement__card form">
+                                            <h3>Dégustez au restaurant</h3>
+                                            <i class="fa-solid fa-store"></i>
+                                        </div>
+                                    </div>
+                                    <section class="restaurant">
+                                    <div>
+                                        <h2>Restaurants</h2>
+                                    </div>
+                                    <div class="cards__">
+                                        <article class="cards">
+                                            <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Menlimontant">
+                                            <h3>La palette du gout</h3>
+                                            <p>Menlimontant</p>
+                                        </article>
+                                    </div>
+                                    <div class="cards__">
+                                        <article class="cards">
+                                            <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Menlimontant">
+                                            <h3>La note enchantée</h3>
+                                            <p>Charonne</p>
+                                        </article>
+                                    </div>
+                                    <div class="cards__">
+                                        <article class="cards">
+                                            <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Menlimontant">
+                                            <h3>A la francaise</h3>
+                                            <p>Cite Rouge</p>
+                                        </article>
+                                    </div>
+                                    <div class="cards__">
+                                        <article class="cards">
+                                            <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Menlimontant">
+                                            <h3>Le delice des sens</h3>
+                                            <p>Folie-Merilcourt</p>
+                                        </article>
+                                    </div>
+                                    </section>
+                                </div>
                             </div>
-                            <div class="rectangle form">
-                                <h3>Composez votre menu</h3>
-                            </div>
-                            <div class="rectangle form">
-                                <h3>Dégustez au restaurant</h3>
-                            </div>
-                        </div>
-                        <section class="restaurant">
-                        <div>
-                            <h2>Restaurants</h2>
-                        </div>
-                        <div class="cards__">
-                            <article class="cards">
-                                <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Menlimontant">
-                                <h3>La palette du gout</h3>
-                                <p>Menlimontant</p>
-                            </article>
-                        </div>
-                        <div class="cards__">
-                            <article class="cards">
-                                <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Menlimontant">
-                                <h3>La note enchantée</h3>
-                                <p>Charonne</p>
-                            </article>
-                        </div>
-                        <div class="cards__">
-                            <article class="cards">
-                                <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Menlimontant">
-                                <h3>A la francaise</h3>
-                                <p>Cite Rouge</p>
-                            </article>
-                        </div>
-                        <div class="cards__">
-                            <article class="cards">
-                                <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Menlimontant">
-                                <h3>Le delice des sens</h3>
-                                <p>Folie-Merilcourt</p>
-                            </article>
-                        </div>
-                        </section>
                     </div>
-                </div>
-        </div>
+                </main>
+                <footer>
+                    <img src="images/logo/ohmyfood@2x.svg" alt="logo footer">
+                    <div class="texte_footer">
+                        <p>Proposer un restaurant</p>
+                        <p>Devenir partenaire</p>
+                        <p>Mentions légales</p>
+                        <p>Contact</p>
+                    </div>
+                </footer>
     </div>
     
 </body>
