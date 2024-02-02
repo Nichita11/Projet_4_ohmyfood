@@ -75,9 +75,15 @@ img {
             margin-top:30px;
             font-size: 16px;
         }
+        &:hover {
+            opacity: 0.7;
+        }
     }
 
 }
+
+.button__btn :hover 
+        {background :  opacity 0.5;}
 
 .part_one {
     background-color:#F6F6F6 ;
@@ -178,14 +184,20 @@ img {
 }
 
 .coeur {
-    font-size: 40px;
+    font-size: 25px;
     position: relative;
     display: flex;
     justify-content: end;
     top: -40px;
-    padding-right:20px ;
+    padding-right:40px ;
     margin-bottom: 0px;
+    
 }
+
+    .coeur_animation:hover {
+        background-image: linear-gradient(0deg, #9356DC, #ff79da);
+    }
+
 
 .absolute {
     position: absolute;
@@ -206,7 +218,7 @@ img {
 
 .cards__img--texte {
     margin-top: 0px;
-    margin-bottom: 8px;
+    margin-bottom: 0px;
     padding-left: 15px;
     &_p {
         padding-bottom: 0px;
@@ -310,7 +322,7 @@ img {
     justify-content: end;
     font-size: 15px;
     font-weight: 700;
-    padding-right: 20px;
+    padding-right: 10px;
     position: relative;
     top: -18px;
 }
