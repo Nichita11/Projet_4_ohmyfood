@@ -176,19 +176,21 @@ img {
         justify-content: center;
         margin-top: 0px;
         margin-bottom: 10px;
-
+    
         
         
         
     }
 }
 
+.content_cards {
+    height: 40px;
+}
+
 .coeur {
     font-size: 25px;
-    position: relative;
     display: flex;
     justify-content: end;
-    top: -40px;
     padding-right:40px ;
     margin-bottom: 0px;
     
@@ -196,6 +198,8 @@ img {
 
     .coeur_animation:hover {
         background-image: linear-gradient(0deg, #9356DC, #ff79da);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
 
@@ -295,7 +299,6 @@ img {
     border-radius: 20px;
     background-color: white;
     display: flex;
-    flex-direction: column;
     margin-top: 15px;
     margin-left: 5px;
     margin-right: 5px;
@@ -319,12 +322,10 @@ img {
 
 .price {
     display: flex;
-    justify-content: end;
+    justify-content: center;
+    align-items: end;
     font-size: 15px;
     font-weight: 700;
-    padding-right: 10px;
-    position: relative;
-    top: -18px;
 }
 
 .header_restaurants {
