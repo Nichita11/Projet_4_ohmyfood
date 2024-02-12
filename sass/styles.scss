@@ -189,6 +189,10 @@ img {
     padding-bottom: 10px;
 }
 
+a {
+    text-decoration: none;
+    text-decoration: unset;
+}
 .coeur {
     font-size: 25px;
     display: flex;
@@ -272,6 +276,11 @@ footer {
     margin: 0;
 }
 
+.titre_page {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
 .titre_restaurant {
     font-family: Shrikhand;
     margin-top: 0px;
@@ -279,6 +288,8 @@ footer {
     padding-left: 17px;
     font-size: 24px;
     padding-top: 24px;
+    
+ }
 }
 
 .pages__restaurants {
@@ -290,10 +301,6 @@ footer {
     top: -35px;
 }
 
-.box {
-    background: green;
-    width: 30px;
-}
 
 img {
     width: 100%;
@@ -321,6 +328,40 @@ img {
     }
 }
 
+.etat_initial {
+    width: 90%;
+    padding-bottom: 10px;
+}
+
+.box {
+    background: #99e2d0;
+    transition: transform 330ms ease-in-out;
+
+    .coche {
+        background-color: white;
+        color:#99e2d0 ;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        border-radius: 50px;
+        width: 25px;
+        height: 25px;
+    }
+.etat_animation {
+    background: #99e2d0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius:20px ;
+    
+    &:active + .box {
+    width: 20%;
+    transform: translate(100%, 0);
+}
+
+} 
+
+}
+
+
 .restaurant_texte--p {
     font-size: 14px;
     padding-left: 13px;
@@ -330,10 +371,11 @@ img {
 
 .price {
     display: flex;
-    justify-content: center;
     align-items: end;
     font-size: 15px;
     font-weight: 700;
+    width: 10%;
+    padding-bottom: 10px;
 }
 
 .header_restaurants {
