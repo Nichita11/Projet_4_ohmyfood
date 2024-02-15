@@ -277,6 +277,23 @@ footer {
     margin: 0;
 }
 
+.header_restaurants {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    .arrow {
+        display: flex;
+        padding-left: 10px;
+        text-decoration: unset;
+    }
+
+}
+
+.img_restaurants {
+    height: 275px;
+}
+
 .titre_page {
     display: flex;
     justify-content: space-between;
@@ -299,7 +316,7 @@ footer {
     border-top-left-radius: 40px;
     padding-bottom: 30px;
     position: relative;
-    top: -35px;
+    top: -60px;
 }
 
 
@@ -329,7 +346,7 @@ img {
     .restaurant_texte-title {
         margin-top:10px ;
         margin-bottom: 0px;
-        padding-left: 13px;
+        padding-left: 15px;
         font-size: 18px;
         text-wrap: nowrap;
         text-overflow: ellipsis;
@@ -402,8 +419,8 @@ img {
 
 
 .restaurant_texte--p {
-    font-size: 14px;
-    padding-left: 13px;
+    font-size: 15px;
+    padding-left: 15px;
     margin-bottom: 0;
     margin-top: 10px;
     text-wrap: nowrap;
@@ -430,7 +447,7 @@ img {
         align-items: center;
         justify-content: center;
         width: 45%;
-        padding-left: 25%;
+        padding-right: 25%;
         margin-bottom: 10px;
         margin-top: 15px;
     }
@@ -457,7 +474,7 @@ img {
 }
 
 .footer__restaurants {
-    margin-top: -35px;
+    margin-top: -58px;
 }
 
 
