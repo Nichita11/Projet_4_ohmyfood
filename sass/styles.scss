@@ -564,8 +564,39 @@ img {
 }
 
 .wrap {
-   
-}
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
 
 }
 
+.desktop {
+    width: 520px;
+    height: 251px;
+    padding: 0px 60px 0px 60px;
+    .cards__img {
+        height: 170px;
+    }
+}
+
+.content_main {
+    height: 50px;
+}
+.fonctionnement_tittre {
+    padding-left: 250px;
+}
+
+.footer {
+    height: 114px;
+    width: 100%;
+    .texte_footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: end;
+    }
+}
+
+}
