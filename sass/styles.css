@@ -1,12 +1,22 @@
+@keyframes loader {
+  0% {
+    display: flex;
+  }
+  95% {
+    display: flex;
+  }
+  100% {
+    display: none;
+  }
+}
 .loader-wrapper {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  display: flex;
+  height: 100vh;
+  width: 100vw;
+  display: none;
   justify-content: center;
   align-items: center;
   background: #353535;
-  display: none;
+  animation: 5s loader;
 }
 
 .loader {
@@ -16,7 +26,6 @@
   border-bottom-color: transparent;
   border-radius: 50%;
   display: inline-block;
-  box-sizing: border-box;
   animation: rotation 1s linear infinite;
 }
 
@@ -365,6 +374,11 @@ img {
   width: calc(100vw - 60px);
   transition: all 240ms ease-in-out;
 }
+@media (min-width: 1200px) {
+  .etat_initial {
+    width: calc(36vw - 60px);
+  }
+}
 
 .etat_animation .radioButton {
   display: none;
@@ -386,6 +400,11 @@ img {
 }
 .etat_animation:has(input:checked) > div:nth-child(1) {
   width: calc(100vw - 124px);
+}
+@media (min-width: 1200px) {
+  .etat_animation:has(input:checked) > div:nth-child(1) {
+    width: calc(36vw - 124px);
+  }
 }
 .etat_animation .coche {
   background-color: white;
@@ -488,10 +507,14 @@ img {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 25px;
+    gap: 45px;
+  }
+  .fonctionnement .fonctionnement_titre {
+    padding-right: 75-px;
+    font-size: 16px;
   }
   .fonctionnement .fonctionnement__card {
-    width: 320px;
+    width: 322px;
   }
   .wrap {
     display: flex;
@@ -512,7 +535,7 @@ img {
     height: 50px;
   }
   .fonctionnement_tittre {
-    padding-left: 250px;
+    padding-left: 140px;
   }
   .footer {
     height: 114px;
@@ -540,4 +563,104 @@ img {
     padding-right: 60px;
     padding-left: 80px;
   }
+  .header_restaurants {
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    display: flex;
+    width: 100%;
+  }
+  .header_restaurants .header_restaurants--img {
+    width: 200px;
+    padding-right: 46%;
+  }
+  .img_restaurants {
+    height: 490px;
+  }
+  .titre_page {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  .pages__restaurants {
+    position: relative;
+    top: -30px;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  .rectangle_form {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  .title_cards {
+    margin-left: 20%;
+  }
+  .footer__restaurants {
+    height: 114px;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px;
+  }
+  .footer__restaurants .texte_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .footer__restaurants .texte_footer .p_footer {
+    font-size: 16px;
+  }
+  .footer--desktop {
+    padding-right: 30px;
+  }
+  .logo_footer {
+    padding-top: 10px;
+    padding-right: 60px;
+    padding-left: 80px;
+  }
+  .footer__restaurants {
+    margin-top: -30px;
+  }
+}
+@keyframes keyframes_animation1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.animation1 {
+  animation: keyframes_animation1 600ms;
+}
+
+@keyframes keyframes_animation2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.animation2 {
+  animation: keyframes_animation2 1200ms;
+  animation-timing-function: cubic-bezier(1, -0.01, 0, 0.99);
+}
+
+@keyframes keyframes_animation3 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.animation3 {
+  animation: keyframes_animation2 2400ms;
+  animation-timing-function: cubic-bezier(1, -0.01, 0, 0.99);
 }/*# sourceMappingURL=styles.css.map */
