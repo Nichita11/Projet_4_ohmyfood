@@ -1,16 +1,13 @@
 // ***** Main page **** //
 
 @keyframes loader{
-    0%{
-        display: flex ;
+    50% {
+        opacity: 1;
     }
 
-    95%{
-        display: flex;
-    }
-
-    100%{
-        display: none ;
+    100% {
+        opacity: 0;
+        display: none;
     }
 }
 
@@ -21,7 +18,7 @@
     justify-content: center;
     align-items: center;
     background: #353535;
-    animation: 5s loader;
+    animation: 2s loader forwards;
 }
 
 
@@ -32,7 +29,6 @@
     border-bottom-color: transparent;
     border-radius: 50%;
     display: inline-block;
-    // box-sizing: border-box;
     animation: rotation 1s linear infinite;
     }
 
@@ -239,6 +235,7 @@ img {
 a {
     text-align: none;
     text-decoration: unset;
+    color: unset;
 }
 .coeur {
     font-size: 25px;
@@ -611,7 +608,7 @@ img {
     height: 50px;
 }
 .fonctionnement_tittre {
-    padding-left: 140px;
+    padding-left: 160px;
 }
 
 .footer {
