@@ -15,7 +15,7 @@
   justify-content: center;
   align-items: center;
   background: #353535;
-  animation: 4s loader forwards;
+  animation: 2s loader forwards;
   position: fixed;
   top: 0;
   left: 0;
@@ -360,6 +360,8 @@ img {
   transition: all 240ms ease-in-out;
 }
 .rectangle_form .restaurant_texte-title {
+  display: block;
+  font-weight: 600;
   margin-top: 10px;
   margin-bottom: 0px;
   padding-left: 15px;
@@ -373,6 +375,7 @@ img {
 }
 
 .etat_initial {
+  display: block;
   padding-bottom: 10px;
   width: calc(100vw - 60px);
   transition: all 240ms ease-in-out;
@@ -401,11 +404,11 @@ img {
 .etat_animation:has(input:checked) {
   grid-template-columns: 1fr 106px !important;
 }
-.etat_animation:has(input:checked) > div:nth-child(1) {
+.etat_animation:has(input:checked) > span:nth-child(1) {
   width: calc(100vw - 124px);
 }
 @media (min-width: 1200px) {
-  .etat_animation:has(input:checked) > div:nth-child(1) {
+  .etat_animation:has(input:checked) > span:nth-child(1) {
     width: calc(36vw - 124px);
   }
 }
@@ -421,6 +424,7 @@ img {
 }
 
 .restaurant_texte--p {
+  display: block;
   font-size: 15px;
   padding-left: 15px;
   margin-bottom: 0;
@@ -666,4 +670,49 @@ img {
 .animation3 {
   animation: keyframes_animation2 2400ms;
   animation-timing-function: cubic-bezier(1, -0.01, 0, 0.99);
+}
+
+.animation1 .etat_initial {
+  padding-bottom: 10px;
+  width: calc(100vw - 60px);
+  transition: all 240ms ease-in-out;
+}
+@media (min-width: 1200px) {
+  .animation1 .etat_initial {
+    width: calc(36vw - 60px);
+  }
+}
+
+.animation1 .etat_animation .flexBox {
+  display: flex;
+  height: 100%;
+  transition: 240ms all ease-in-out;
+}
+.animation1 .etat_animation__confirm {
+  background-color: #99E2D0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 64px;
+}
+.animation1 .etat_animation .radioButton {
+  display: none;
+}
+.animation1 .etat_animation .radioButton:checked + .etat_initial {
+  width: calc(100vw - 124px) !important;
+}
+@media (min-width: 1200px) {
+  .animation1 .etat_animation .radioButton:checked + .etat_initial {
+    width: calc(36vw - 124px) !important;
+  }
+}
+.animation1 .etat_animation .coche {
+  background-color: white;
+  color: #99e2d0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 50px;
+  width: 25px;
+  height: 25px;
 }/*# sourceMappingURL=styles.css.map */
